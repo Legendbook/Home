@@ -101,7 +101,7 @@ img {vertical-align: middle;}
 <div class="mySlides fade">
   <div class="numbertext">4/ 4</div>
   <img src="img_mountains_wide.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+  <div class="text">Caption Four</div>
 </div>
 
 </div>
@@ -121,12 +121,12 @@ function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
+    for (i = 0; i < slides.length; i+++) {
        slides[i].style.display = "none";  
     }
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
+    for (i = 0; i < dots.length; i+++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";  
